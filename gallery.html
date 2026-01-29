@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery - Royal Friends Gummadidala</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Royal Friends Gummadidala</h1>
+  <p>Youth for Social Service</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="activities.html">Activities</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Photo Gallery</h2>
+  <p>Moments from our social service and community activities.</p>
+
+  <div class="gallery">
+    <img src="images/2017-Ramnagar1" alt="Social Service Activity">
+    <img src="images/event2.jpg" alt="Community Program">
+    <img src="images/cleaning_drive.jpg" alt="Cleanliness Drive">
+    <img src="images/tree_plantation.jpg" alt="Tree Plantation">
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Royal Friends Gummadidala</p>
+</footer>
+
+</body>
+</html>
