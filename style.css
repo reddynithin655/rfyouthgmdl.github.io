@@ -3,16 +3,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f6f8;
 
+
   background-image: url("images/logo-watermark.png");
-  background-image: url("images/RF-UpdatedLogo.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 400px;
+  background-size: 450px;
   background-attachment: fixed;
 }
+
+
 .container {
-  background-color: rgba(255, 255, 255, 0.92);
+  max-width: 900px;
+  margin: 20px auto;
   padding: 20px;
+
+  
+  background-color: rgba(255, 255, 255, 0.85);
+
   border-radius: 6px;
 }
 
