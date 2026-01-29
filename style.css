@@ -18,7 +18,7 @@ body::before {
   background-image: url("images/logo-watermark.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 100;
 
   opacity: 0.08;   /* 👈 watermark strength */
   z-index: -1;
