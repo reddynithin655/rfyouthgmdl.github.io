@@ -289,3 +289,32 @@ body {
   color: #aaaaaa;
   font-size: 13px;
 }
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  html {
+    zoom: 1; /* reset zoom on mobile */
+  }
+}
+@media (max-width: 768px) {
+
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-nav {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo-text h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .container {
+    margin: 20px;
+  }
+}
+
