@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  zoom: 1.25; /* 125% zoom */
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -21,7 +25,7 @@ body {
 }
 
 /* ===============================
-   HEADER (AGASTYA STYLE)
+   HEADER (FIXED HEIGHT)
 ================================ */
 .main-header {
   background-color: #ffffff;
@@ -29,19 +33,22 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+
+  height: 80px; /* HEADER HEIGHT LOCKED */
 }
 
 .header-container {
   max-width: 1200px;
   margin: auto;
-  padding: 14px 20px;
+  padding: 0 20px;
 
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Logo area */
+/* LOGO AREA */
 .logo-area {
   display: flex;
   align-items: center;
@@ -49,8 +56,10 @@ body {
 }
 
 .logo-area img {
-  width: 70px;
+  width: 48px;                /* original size */
   height: auto;
+  transform: scale(1.4);      /* visually larger logo */
+  transform-origin: left center;
 }
 
 .logo-text h1 {
@@ -64,7 +73,7 @@ body {
   color: #666;
 }
 
-/* Navigation */
+/* NAVIGATION */
 .main-nav {
   display: flex;
   gap: 26px;
@@ -102,7 +111,7 @@ body {
   padding: 20px;
 }
 
-/* Liquid glass / frosted effect */
+/* GLASS / LIQUID EFFECT */
 .overlay {
   padding: 30px;
   border-radius: 20px;
@@ -118,7 +127,7 @@ body {
     inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 
-/* Text inside glass */
+/* TEXT INSIDE GLASS */
 .overlay h2,
 .overlay h3,
 .overlay p,
@@ -131,9 +140,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* ===============================
-   LISTS
-================================ */
+/* LISTS */
 .overlay ul {
   padding-left: 20px;
 }
@@ -200,7 +207,7 @@ body {
 }
 
 /* ===============================
-   FOOTER (FLIPKART STYLE)
+   FOOTER
 ================================ */
 .site-footer {
   background-color: #1c1c1c;
@@ -248,7 +255,7 @@ body {
   color: #ffffff;
 }
 
-/* Social icons */
+/* SOCIAL ICONS */
 .social-icons {
   display: flex;
   gap: 16px;
@@ -273,12 +280,8 @@ body {
 .social-icons a:hover {
   background: #555;
 }
-html {
-  zoom: 1.3;   /* 125% zoom */
-}
 
-
-/* Footer bottom */
+/* FOOTER BOTTOM */
 .footer-bottom {
   border-top: 1px solid #333;
   text-align: center;
