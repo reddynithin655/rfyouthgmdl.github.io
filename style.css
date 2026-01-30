@@ -60,3 +60,29 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  width: 42px;
+  height: 42px;
+  background: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1); /* makes icons white */
+}
+
+.social-icons a:hover {
+  background: #555;
+}
+
